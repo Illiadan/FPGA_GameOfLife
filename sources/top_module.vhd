@@ -94,7 +94,7 @@ begin
     leds(5 downto 4) <= size_selection;
     leds(7 downto 6) <= time_selection;
     
-    -- managing moduls
+    -- managing modules
     clock_division <= 2 * to_integer(unsigned(time_selection));
     cursor_control  <= button_out(4 downto 1) & button(0);
     
